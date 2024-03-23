@@ -62,7 +62,6 @@ img {
 
 .header-container-logo {
   display: flex;
-  text-align: center;
   gap: 6px;
   font-size: 20px;
   font-weight: 600;
@@ -196,9 +195,8 @@ img {
   display: flex;
   padding: 8px;
   align-items: center;
-  gap: 10px;
-  border-radius: 100px;
   border: 1px solid #a685fa;
+  border-radius: 100%;
 }
 
 .hero-icon {
@@ -210,6 +208,8 @@ img {
   text-align: center;
   font-weight: 600;
 }
+
+/* Featured Properties */
 
 .properties {
   padding: 80px 0;
@@ -296,4 +296,216 @@ img {
   padding: 14px 20px;
   border-radius: 8px;
   background-color: var(--Purple-60, #703bf7);
+}
+
+.properties-container-buttons {
+  display: flex;
+  padding-top: 16px;
+  justify-content: space-between;
+  border-top: 1px solid var(--Grey-15, #262626);
+  margin-top: 30px;
+}
+
+.properties-button-view {
+  padding: 14px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--Grey-15, #262626);
+  background-color: var(--Grey-10, #1a1a1a);
+}
+
+.properties-container-slide {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.properties-button-arrow {
+  display: flex;
+  padding: 10px;
+  border-radius: 69px;
+  border: 1px solid var(--Grey-15, #262626);
+  background-color: var(--Grey-10, #1a1a1a);
+}
+
+.properties-button-arrow {
+  fill: #808080;
+}
+
+.properties-button-icon-right {
+  fill: #fff;
+}
+
+.properties-slide-span {
+  color: var(--Grey-60, #999);
+}
+
+/* What Our Clients Say */
+
+.our-clients {
+  padding-bottom: 80px;
+}
+
+.our-clients-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.our-clients-text {
+  color: var(--Grey-60, #999);
+  margin-bottom: 40px;
+}
+
+.our-clients-item {
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 10px;
+  border: 1px solid var(--Grey-15, #262626);
+  background-color: var(--Grey-08, #141414);
+}
+
+.our-clients-sub-list {
+  display: flex;
+  gap: 8px;
+}
+
+.our-clients-icon {
+  fill: #ffe500;
+}
+
+.our-clients-item-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.our-clients-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.our-clients-container-firsttext {
+  font-size: 16px;
+}
+
+.our-clients-container-secondtext {
+  color: var(--Grey-60, #999);
+}
+
+/* Frequently Asked Questions */
+
+.questions {
+  padding-bottom: 80px;
+}
+
+.questions-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.questions-text {
+  color: var(--Grey-60, #999);
+  margin-bottom: 40px;
+}
+
+.questions-item {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--Grey-15, #262626);
+  background-color: var(--Grey-08, #141414);
+}
+
+.questions-item-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.questions-item-text {
+  color: var(--Grey-60, #999);
+}
+
+.questions-item-button {
+  display: flex;
+  padding: 14px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--Grey-15, #262626);
+  background-color: var(--Grey-10, #1a1a1a);
+}
+
+/* Start Your Real Estate Journey Today */
+
+.journey {
+  padding-bottom: 50px;
+}
+
+.journey-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.journey-text {
+  color: var(--Grey-60, #999);
+  margin-bottom: 30px;
+}
+
+.journey-button {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 8px;
+  background-color: var(--Purple-60, #703bf7);
+}
+
+/* Footer */
+
+.footer-container-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.footer-input-container {
+  position: relative;
+  padding: 14px 50px 14px 46px;
+  border-radius: 8px;
+  background-color: var(--Grey-08, #141414);
+  border: 1px solid var(--Grey-15, #262626);
+  margin-bottom: 50px;
+}
+
+.footer-input-email {
+  fill: #999999;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+
+.footer-input-send {
+  fill: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+.footer-input {
+  width: 100%;
+  color: #fff;
+  outline: transparent;
+  background-color: var(--Grey-08, #141414);
+  border: none;
 }
