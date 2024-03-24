@@ -50,6 +50,12 @@ img {
   padding: 0 16px;
 }
 
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
 .header-container {
   padding: 20px 0;
   border-bottom: 1px solid var(--Dark-Blue-15, #211e2f);
@@ -58,14 +64,16 @@ img {
 
 .header-container .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .header-container-logo {
   display: flex;
+  align-items: center;
   gap: 6px;
   font-size: 20px;
   font-weight: 600;
+  margin-right: 366px;
 }
 
 .header-logo {
@@ -73,8 +81,51 @@ img {
   height: 28px;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-item .home {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--Grey-15, #262626);
+  background-color: var(--Grey-08, #141414);
+}
+
+.header-contact-us {
+  padding: 14px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--Grey-15, #262626);
+  background-color: var(--Grey-08, #141414);
+  margin-left: auto;
+}
+
+.header-burger {
+  border: none;
+  background-color: var(--Grey-10, #1a1a1a);
+}
+
 .header-icon-burger {
   fill: #fff;
+}
+
+@media (max-width: 1279px) {
+  .header-container .container {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header-burger {
+    display: none;
+  }
 }
 
 .hero {
@@ -169,7 +220,7 @@ img {
   align-self: stretch;
   border-radius: 12px;
   border: 1px solid var(--Grey-15, #262626);
-  background: var(--Grey-08, #141414);
+  background-color: var(--Grey-08, #141414);
   box-shadow: 0px 0px 0px 4px #191919;
 }
 
@@ -191,6 +242,8 @@ img {
   top: 20px;
   right: 20px;
   stroke: #4d4d4d;
+  width: 26px;
+  height: 26px;
 }
 
 .container-logo {
@@ -203,6 +256,8 @@ img {
 
 .hero-icon {
   fill: #a685fa;
+  width: 20px;
+  height: 20px;
 }
 
 .down-item-text {
@@ -211,10 +266,138 @@ img {
   font-weight: 600;
 }
 
+@media (min-width: 1280px) {
+  .hero {
+    padding: 0;
+  }
+
+  .up-part {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .hero-container-image {
+    height: 622px;
+    width: calc((100% - 60px) / 2);
+    background-position: center;
+  }
+
+  .left-part {
+    width: calc((100% - 60px) / 2);
+    padding-top: 80px;
+  }
+
+  .hero-title {
+    font-size: 46px;
+    margin-bottom: 20px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  .hero-container-button {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 50px;
+  }
+
+  .hero-first-button {
+    width: 112px;
+    margin-bottom: 0;
+  }
+
+  .hero-second-button {
+    width: 152px;
+    margin-bottom: 0;
+  }
+
+  .hero-item {
+    width: calc((100% - 32px) / 3);
+    align-items: start;
+    padding: 14px 18px;
+    border-radius: 10px;
+  }
+
+  .item-text-number {
+    text-align: start;
+    font-size: 30px;
+  }
+
+  .hero-item-text {
+    text-align: start;
+    font-size: 16px;
+  }
+
+  .down-list {
+    box-shadow: 0px 0px 0px 6px #191919;
+  }
+
+  .down-item {
+    width: calc((100% - 30px) / 4);
+    gap: 16px;
+    padding: 30px 16px;
+  }
+
+  .container-logo {
+    padding: 18px;
+  }
+
+  .hero-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 /* Featured Properties */
 
 .properties {
   padding: 80px 0;
+}
+
+.properties .container {
+  position: relative;
+}
+
+.container-frame {
+  display: flex;
+  gap: 4px;
+  position: absolute;
+  top: -8px;
+  left: 8px;
+}
+
+.container-frame-item {
+  position: relative;
+}
+
+.first {
+  fill: #666666;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.second {
+  fill: #666666;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.third {
+  fill: #666666;
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  transform: translateY(-50%);
+}
+
+.main-icon {
+  fill: #333333;
 }
 
 .properties-title {
@@ -347,6 +530,10 @@ img {
   padding-bottom: 80px;
 }
 
+.our-clients .container {
+  position: relative;
+}
+
 .our-clients-title {
   font-size: 28px;
   font-weight: 600;
@@ -401,6 +588,10 @@ img {
 
 .questions {
   padding-bottom: 80px;
+}
+
+.questions .container {
+  position: relative;
 }
 
 .questions-title {
