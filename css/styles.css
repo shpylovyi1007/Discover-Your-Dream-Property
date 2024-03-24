@@ -46,7 +46,8 @@ img {
 
 .container {
   max-width: 390px;
-  margin: 0 16px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .header-container {
@@ -68,7 +69,8 @@ img {
 }
 
 .header-logo {
-  fill: #703bf7;
+  width: 28px;
+  height: 28px;
 }
 
 .header-icon-burger {
@@ -468,13 +470,26 @@ img {
 
 /* Footer */
 
+.footer {
+  border-top: 1px solid #262626;
+}
+
+.footer-first-container {
+  padding: 50px 0 90px;
+}
+
 .footer-container-logo {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 34px;
+  height: 34px;
 }
 
 .footer-input-container {
@@ -508,4 +523,123 @@ img {
   outline: transparent;
   background-color: var(--Grey-08, #141414);
   border: none;
+}
+
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  position: relative;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 40px) / 2);
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--Grey-15, #262626);
+}
+
+.home {
+  position: relative;
+}
+
+.home::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -20px;
+  width: 1px;
+  height: 100%;
+  background-color: #262626;
+}
+
+.properties-footer-item {
+  height: 116px;
+  position: relative;
+}
+
+.properties-footer-item::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -20px;
+  width: 1px;
+  height: 100%;
+  background-color: #262626;
+}
+
+.contact-us {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  padding-top: 20px;
+}
+
+.contact-us::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -20px;
+  width: 1px;
+  height: 100%;
+  background-color: #262626;
+}
+
+.footer-item-title {
+  color: var(--Grey-60, #999);
+  font-size: 16px;
+  letter-spacing: -0.006em;
+  margin-bottom: 16px;
+}
+
+.footer-item-link {
+  line-height: 1.7;
+  letter-spacing: -0.006em;
+}
+
+.footer-item-link:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer-container-social .container {
+  padding: 20px 0;
+  margin: 0 auto;
+  background-color: var(--Grey-10, #1a1a1a);
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: none;
+  border-radius: 58px;
+  background-color: var(--Grey-08, #141414);
+}
+
+.footer-social {
+  fill: #fff;
+}
+
+.footer-container-links {
+  text-align: center;
+}
+
+.footer-first-link {
+  line-height: 1.7;
+  letter-spacing: -0.006em;
+  margin-bottom: 10px;
+}
+
+.footer-second-link {
+  line-height: 1.7;
+  letter-spacing: -0.006em;
 }
