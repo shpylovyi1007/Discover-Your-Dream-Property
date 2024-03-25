@@ -29,13 +29,21 @@
         </a>
         <nav class="navigation">
           <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link home" href="">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Properties</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Services</a></li>
+            <li class="nav-item">
+              <button class="nav-link nav-home" href="">Home</button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="nav-link">About Us</button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="nav-link">Properties</button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="nav-link">Services</button>
+            </li>
           </ul>
         </nav>
-        <a class="header-contact-us" href="">Contact Us</a>
+        <button class="header-contact-us" href="">Contact Us</button>
         <button type="button" class="header-burger">
           <svg class="header-icon-burger" width="28" height="28">
             <use href="./img/icon.svg#icon-burger"></use>
@@ -131,38 +139,47 @@
         <div class="container">
           <ul class="container-frame">
             <li class="container-frame-item">
-              <svg class="main-icon first" width="20" height="20">
+              <svg class="main-icon first">
                 <use href="./img/icon.svg#icon-frame"></use>
               </svg>
             </li>
             <li class="container-frame-item">
-              <svg class="main-icon second" width="12" height="12">
+              <svg class="main-icon second">
                 <use href="./img/icon.svg#icon-frame"></use>
               </svg>
             </li>
             <li class="container-frame-item">
-              <svg class="main-icon third" width="5.6" height="5.6">
+              <svg class="main-icon third">
                 <use href="./img/icon.svg#icon-frame"></use>
               </svg>
             </li>
           </ul>
           <h2 class="properties-title">Featured Properties</h2>
-          <p class="properties-text">
-            Explore our handpicked selection of featured properties. Each
-            listing offers a glimpse into exceptional homes and investments
-            available through Estatein.
-          </p>
+          <div class="properties-text-button">
+            <p class="properties-text">
+              Explore our handpicked selection of featured properties. Each
+              listing offers a glimpse into exceptional homes and investments
+              available through Estatein.
+              <span class="properties-title-span"
+                >Click "View Details" for more information.</span
+              >
+            </p>
+            <button class="properties-title-button" type="button">
+              View All Properties
+            </button>
+          </div>
           <ul class="properties-list">
-            <li class="properties-item">
+            <li class="properties-item seaside">
               <img
                 class="properties-img"
-                src="./img/Rustic-mob.jpg"
-                alt="Rustic Retreat Cottage"
+                src="./img/Seaside.png"
+                alt="Seaside Serenity Villa"
               />
-              <h3 class="item-title">Rustic Retreat Cottage</h3>
+              <h3 class="item-title">Seaside Serenity Villa</h3>
               <p class="properties-item-text">
-                An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
-                community... <span class="properties-text-span">Read More</span>
+                A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban
+                neighborhood...
+                <span class="properties-text-span">Read More</span>
               </p>
               <ul class="properties-sub-list">
                 <li class="properties-sub-item">
@@ -192,8 +209,85 @@
                 <button class="properties-button">View Property Details</button>
               </div>
             </li>
-            <li></li>
-            <li></li>
+            <li class="properties-item metropolitan">
+              <img
+                class="properties-img"
+                src="./img/Metropolitan.png"
+                alt="Metropolitan Haven"
+              />
+              <h3 class="item-title">Metropolitan Haven</h3>
+              <p class="properties-item-text">
+                A chic and fully-furnished 2-bedroom apartment with panoramic
+                city views...
+                <span class="properties-text-span">Read More</span>
+              </p>
+              <ul class="properties-sub-list">
+                <li class="properties-sub-item">
+                  <svg class="properties-icon" width="22" height="17">
+                    <use href="./img/icon.svg#icon-bedroom"></use>
+                  </svg>
+                  <p class="properties-sub-text">2-Bedroom</p>
+                </li>
+                <li class="properties-sub-item">
+                  <svg class="properties-icon" width="21" height="21">
+                    <use href="./img/icon.svg#icon-bathroom"></use>
+                  </svg>
+                  <p class="properties-sub-text">2-Bathroom</p>
+                </li>
+                <li class="properties-sub-item">
+                  <svg class="properties-icon" width="20" height="20">
+                    <use href="./img/icon.svg#icon-villa"></use>
+                  </svg>
+                  <p class="properties-sub-text">Villa</p>
+                </li>
+              </ul>
+              <div class="properties-container-button">
+                <div class="container-price">
+                  <p class="price-title">Price</p>
+                  <p class="price">$550,000</p>
+                </div>
+                <button class="properties-button">View Property Details</button>
+              </div>
+            </li>
+            <li class="properties-item">
+              <img
+                class="properties-img"
+                src="./img/Rustic.png"
+                alt="Rustic Retreat Cottage"
+              />
+              <h3 class="item-title">Rustic Retreat Cottage</h3>
+              <p class="properties-item-text">
+                An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
+                community... <span class="properties-text-span">Read More</span>
+              </p>
+              <ul class="properties-sub-list">
+                <li class="properties-sub-item">
+                  <svg class="properties-icon" width="22" height="17">
+                    <use href="./img/icon.svg#icon-bedroom"></use>
+                  </svg>
+                  <p class="properties-sub-text">3-Bedroom</p>
+                </li>
+                <li class="properties-sub-item">
+                  <svg class="properties-icon" width="21" height="21">
+                    <use href="./img/icon.svg#icon-bathroom"></use>
+                  </svg>
+                  <p class="properties-sub-text">3-Bathroom</p>
+                </li>
+                <li class="properties-sub-item">
+                  <svg class="properties-icon" width="20" height="20">
+                    <use href="./img/icon.svg#icon-villa"></use>
+                  </svg>
+                  <p class="properties-sub-text">Villa</p>
+                </li>
+              </ul>
+              <div class="properties-container-button">
+                <div class="container-price">
+                  <p class="price-title">Price</p>
+                  <p class="price">$550,000</p>
+                </div>
+                <button class="properties-button">View Property Details</button>
+              </div>
+            </li>
           </ul>
           <div class="properties-container-buttons">
             <button class="properties-button-view">View All Properties</button>
@@ -249,27 +343,27 @@
             <li class="our-clients-item">
               <ul class="our-clients-sub-list">
                 <li class="our-clients-sub-item">
-                  <svg class="our-clients-icon" width="18" height="18">
+                  <svg class="our-clients-icon">
                     <use href="./img/icon.svg#icon-Shape"></use>
                   </svg>
                 </li>
                 <li class="our-clients-sub-item">
-                  <svg class="our-clients-icon" width="18" height="18">
+                  <svg class="our-clients-icon">
                     <use href="./img/icon.svg#icon-Shape"></use>
                   </svg>
                 </li>
                 <li class="our-clients-sub-item">
-                  <svg class="our-clients-icon" width="18" height="18">
+                  <svg class="our-clients-icon">
                     <use href="./img/icon.svg#icon-Shape"></use>
                   </svg>
                 </li>
                 <li class="our-clients-sub-item">
-                  <svg class="our-clients-icon" width="18" height="18">
+                  <svg class="our-clients-icon">
                     <use href="./img/icon.svg#icon-Shape"></use>
                   </svg>
                 </li>
                 <li class="our-clients-sub-item">
-                  <svg class="our-clients-icon" width="18" height="18">
+                  <svg class="our-clients-icon">
                     <use href="./img/icon.svg#icon-Shape"></use>
                   </svg>
                 </li>
@@ -294,24 +388,96 @@
                 </div>
               </div>
             </li>
-            <li>
-              <ul></ul>
-              <h3></h3>
-              <p></p>
-              <div>
-                <img src="" alt="" />
-                <p></p>
-                <p></p>
+            <li class="our-clients-item emelie">
+              <ul class="our-clients-sub-list">
+                <li class="our-clients-sub-item">
+                  <svg class="our-clients-icon">
+                    <use href="./img/icon.svg#icon-Shape"></use>
+                  </svg>
+                </li>
+                <li class="our-clients-sub-item">
+                  <svg class="our-clients-icon">
+                    <use href="./img/icon.svg#icon-Shape"></use>
+                  </svg>
+                </li>
+                <li class="our-clients-sub-item">
+                  <svg class="our-clients-icon">
+                    <use href="./img/icon.svg#icon-Shape"></use>
+                  </svg>
+                </li>
+                <li class="our-clients-sub-item">
+                  <svg class="our-clients-icon">
+                    <use href="./img/icon.svg#icon-Shape"></use>
+                  </svg>
+                </li>
+                <li class="our-clients-sub-item">
+                  <svg class="our-clients-icon">
+                    <use href="./img/icon.svg#icon-Shape"></use>
+                  </svg>
+                </li>
+              </ul>
+              <h3 class="our-clients-item-title">Efficient and Reliable</h3>
+              <p class="our-clients-sub-text">
+                Estatein provided us with top-notch service. They helped us sell
+                our property quickly and at a great price. We couldn't be
+                happier with the results.
+              </p>
+              <div class="our-clients-container">
+                <img
+                  class="our-clients-image"
+                  src="./img/Profile-Emilie.png"
+                  alt="Emelie Thomson"
+                />
+                <div class="our-clients-sub-container">
+                  <p class="our-clients-container-firsttext">Emelie Thomson</p>
+                  <p class="our-clients-container-secondtext">USA, Florida</p>
+                </div>
               </div>
             </li>
-            <li>
-              <ul></ul>
-              <h3></h3>
-              <p></p>
-              <div>
-                <img src="" alt="" />
-                <p></p>
-                <p></p>
+            <li class="our-clients-item john">
+              <ul class="our-clients-sub-list">
+                <li class="our-clients-sub-item">
+                  <svg class="our-clients-icon">
+                    <use href="./img/icon.svg#icon-Shape"></use>
+                  </svg>
+                </li>
+                <li class="our-clients-sub-item">
+                  <svg class="our-clients-icon">
+                    <use href="./img/icon.svg#icon-Shape"></use>
+                  </svg>
+                </li>
+                <li class="our-clients-sub-item">
+                  <svg class="our-clients-icon">
+                    <use href="./img/icon.svg#icon-Shape"></use>
+                  </svg>
+                </li>
+                <li class="our-clients-sub-item">
+                  <svg class="our-clients-icon">
+                    <use href="./img/icon.svg#icon-Shape"></use>
+                  </svg>
+                </li>
+                <li class="our-clients-sub-item">
+                  <svg class="our-clients-icon">
+                    <use href="./img/icon.svg#icon-Shape"></use>
+                  </svg>
+                </li>
+              </ul>
+              <h3 class="our-clients-item-title">Trusted Advisors</h3>
+              <p class="our-clients-sub-text">
+                The Estatein team guided us through the entire buying process.
+                Their knowledge and commitment to our needs were impressive.
+                Thank you for your support!
+              </p>
+              <div class="our-clients-container">
+                <img
+                  class="our-clients-image"
+                  src="./img/Profile-John.png"
+                  alt="John Mans"
+                />
+                <div class="our-clients-sub-container">
+                  <p class="our-clients-container-firsttext">John Mans</p>
+                  <p class="our-clients-container-secondtext">USA, Nevada</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -378,13 +544,25 @@
               </p>
               <button class="questions-item-button">Read More</button>
             </li>
-            <li>
-              <h3></h3>
-              <p></p>
+            <li class="questions-item questions-laptop">
+              <h3 class="questions-item-title">
+                What documents do I need to sell my property through Estatein?
+              </h3>
+              <p class="questions-item-text">
+                Find out about the necessary documentation for listing your
+                property with us.
+              </p>
+              <button class="questions-item-button">Read More</button>
             </li>
-            <li>
-              <h3></h3>
-              <p></p>
+            <li class="questions-item questions-laptop">
+              <h3 class="questions-item-title">
+                How can I contact an Estatein agent?
+              </h3>
+              <p class="questions-item-text">
+                Discover the different ways you can get in touch with our
+                experienced agents.
+              </p>
+              <button class="questions-item-button">Read More</button>
             </li>
           </ul>
           <div class="properties-container-buttons">
@@ -414,15 +592,23 @@
 
       <section class="journey">
         <div class="container">
-          <h2 class="journey-title">Start Your Real Estate Journey Today</h2>
-          <p class="journey-text">
-            Your dream property is just a click away. Whether you're looking for
-            a new home, a strategic investment, or expert real estate advice,
-            Estatein is here to assist you every step of the way. Take the first
-            step towards your real estate goals and explore our available
-            properties or get in touch with our team for personalized
-            assistance.
-          </p>
+          <svg class="journey-icon">
+            <use href="./img/icon.svg#icon-abstract-design1"></use>
+          </svg>
+          <svg class="journey-icon-right">
+            <use href="./img/icon.svg#icon-abstract-design2"></use>
+          </svg>
+          <div>
+            <h2 class="journey-title">Start Your Real Estate Journey Today</h2>
+            <p class="journey-text">
+              Your dream property is just a click away. Whether you're looking
+              for a new home, a strategic investment, or expert real estate
+              advice, Estatein is here to assist you every step of the way. Take
+              the first step towards your real estate goals and explore our
+              available properties or get in touch with our team for
+              personalized assistance.
+            </p>
+          </div>
           <button class="journey-button">Explore Properties</button>
         </div>
       </section>
@@ -430,62 +616,66 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-first-container">
-          <a href="./index.html" class="footer-container-logo">
-            <img class="footer-logo" src="./img/Symbol.png" alt="" />
-            Estatein
-          </a>
-          <div class="footer-input-container">
-            <svg class="footer-input-email" width="20" height="20">
-              <use href="./img/icon.svg#icon-create-email"></use>
-            </svg>
-            <svg class="footer-input-send" width="24" height="24">
-              <use href="./img/icon.svg#icon-send-email"></use>
-            </svg>
-            <label class="footer-label" for="user-email"></label>
-            <input
-              class="footer-input"
-              type="email"
-              name="user-email"
-              id="user-email"
-              placeholder="Enter Your Email"
-            />
+          <div>
+            <a href="./index.html" class="footer-container-logo">
+              <img class="footer-logo" src="./img/Symbol.png" alt="" />
+              Estatein
+            </a>
+            <div class="footer-input-container">
+              <svg class="footer-input-email" width="20" height="20">
+                <use href="./img/icon.svg#icon-create-email"></use>
+              </svg>
+              <svg class="footer-input-send" width="24" height="24">
+                <use href="./img/icon.svg#icon-send-email"></use>
+              </svg>
+              <label class="footer-label" for="user-email"></label>
+              <input
+                class="footer-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Enter Your Email"
+              />
+            </div>
           </div>
-          <ul class="footer-list">
-            <li class="footer-item home">
-              <h3 class="footer-item-title">Home</h3>
-              <a class="footer-item-link" href="">Hero Section</a>
-              <a class="footer-item-link" href="">Features</a>
-              <a class="footer-item-link" href="">Properties</a>
-              <a class="footer-item-link" href="">Testimonials</a>
-              <a class="footer-item-link" href="">FAQ's</a>
-            </li>
-            <li class="footer-item">
-              <h3 class="footer-item-title">About Us</h3>
-              <a class="footer-item-link" href="">Our Story</a>
-              <a class="footer-item-link" href="">Our Works</a>
-              <a class="footer-item-link" href="">How It Works</a>
-              <a class="footer-item-link" href="">Our Team</a>
-              <a class="footer-item-link" href="">Our Clients</a>
-            </li>
-            <li class="footer-item properties-footer-item">
-              <h3 class="footer-item-title">Properties</h3>
-              <a class="footer-item-link" href="">Portfolio</a>
-              <a class="footer-item-link" href="">Categories</a>
-            </li>
-            <li class="footer-item services">
-              <h3 class="footer-item-title">Services</h3>
-              <a class="footer-item-link" href="">Valuation Mastery</a>
-              <a class="footer-item-link" href="">Strategic Marketing</a>
-              <a class="footer-item-link" href="">Negotiation Wizardry</a>
-              <a class="footer-item-link" href="">Closing Success</a>
-              <a class="footer-item-link" href="">Property Management</a>
-            </li>
-            <li class="footer-item contact-us">
-              <h3 class="footer-item-title">Contact Us</h3>
-              <a class="footer-item-link" href="">Contact Form</a>
-              <a class="footer-item-link" href="">Our Offices</a>
-            </li>
-          </ul>
+          <div>
+            <ul class="footer-list">
+              <li class="footer-item home">
+                <h3 class="footer-item-title">Home</h3>
+                <a class="footer-item-link" href="">Hero Section</a>
+                <a class="footer-item-link" href="">Features</a>
+                <a class="footer-item-link" href="">Properties</a>
+                <a class="footer-item-link" href="">Testimonials</a>
+                <a class="footer-item-link" href="">FAQ's</a>
+              </li>
+              <li class="footer-item">
+                <h3 class="footer-item-title">About Us</h3>
+                <a class="footer-item-link" href="">Our Story</a>
+                <a class="footer-item-link" href="">Our Works</a>
+                <a class="footer-item-link" href="">How It Works</a>
+                <a class="footer-item-link" href="">Our Team</a>
+                <a class="footer-item-link" href="">Our Clients</a>
+              </li>
+              <li class="footer-item properties-footer-item">
+                <h3 class="footer-item-title">Properties</h3>
+                <a class="footer-item-link" href="">Portfolio</a>
+                <a class="footer-item-link" href="">Categories</a>
+              </li>
+              <li class="footer-item services">
+                <h3 class="footer-item-title">Services</h3>
+                <a class="footer-item-link" href="">Valuation Mastery</a>
+                <a class="footer-item-link" href="">Strategic Marketing</a>
+                <a class="footer-item-link" href="">Negotiation Wizardry</a>
+                <a class="footer-item-link" href="">Closing Success</a>
+                <a class="footer-item-link" href="">Property Management</a>
+              </li>
+              <li class="footer-item contact-us">
+                <h3 class="footer-item-title">Contact Us</h3>
+                <a class="footer-item-link" href="">Contact Form</a>
+                <a class="footer-item-link" href="">Our Offices</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="footer-container-social">
