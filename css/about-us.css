@@ -1,0 +1,210 @@
+.about-hero {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.about-hero-container {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 310px;
+}
+
+.hero-list {
+  margin-bottom: 0;
+}
+
+.left-part {
+  position: relative;
+}
+
+.left-part .container-frame {
+  left: -8px;
+  top: -12px;
+}
+
+/* our values!!! */
+
+.our-values {
+  padding-bottom: 80px;
+}
+
+.our-values .container {
+  position: relative;
+}
+
+.values-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.values-text {
+  color: var(--Grey-60, #999);
+  margin-bottom: 40px;
+}
+
+.values-list {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--Grey-15, #262626);
+  background-color: var(--Grey-08, #141414);
+  box-shadow: 0px 0px 0px 6px #191919;
+}
+
+.values-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  border-radius: 12px;
+}
+
+.line {
+  position: relative;
+}
+
+.line::after {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  content: "";
+  width: 310px;
+  height: 1px;
+  background-color: #262626;
+}
+
+.item-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.values-icon {
+  width: 52px;
+  height: 52px;
+  padding: 14px;
+  border-radius: 50px;
+  border: 1px solid var(--Purple-60, #703bf7);
+  background: var(--Grey-08, #141414);
+}
+
+.values-item-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.values-item-text {
+  color: var(--Grey-60, #999);
+}
+
+/* Our Achievements!!! */
+
+.achievements {
+  padding-bottom: 80px;
+}
+
+.achievements .container {
+  position: relative;
+}
+
+.achievement-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.achievement-text {
+  color: var(--Grey-60, #999);
+  margin-bottom: 40px;
+}
+
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.achievements-item {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--Grey-15, #262626);
+  background: var(--Grey-08, #141414);
+  box-shadow: 0px 0px 0px 4px #191919;
+}
+
+.achievements-item-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.achievements-item-text {
+  color: var(--Grey-60, #999);
+}
+
+/* Navigating the Estatein Experience!!! */
+
+.experience {
+  padding-bottom: 80px;
+}
+
+.experience .container {
+  position: relative;
+}
+
+.experience-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.experience-text {
+  color: var(--Grey-60, #999);
+  margin-bottom: 40px;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.experience-item-number {
+  font-size: 16px;
+  padding: 14px 16px;
+  border-left: 1px solid var(--Purple-60, #703bf7);
+}
+
+.experience-item-container {
+  padding: 40px;
+  border-radius: 0px 10px 10px 10px;
+  border: 1px solid #262626;
+  background-color: linear-gradient(
+    121deg,
+    #703bf7 -49.01%,
+    rgba(112, 59, 247, 0) 13.65%
+  );
+}
+
+.experience-item-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.experience-item-text {
+  color: var(--Grey-60, #999);
+  font-size: 16px;
+}

@@ -82,26 +82,12 @@ img {
 
 .navigation {
   display: flex;
-  align-items: center;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
   gap: 24px;
-}
-
-.nav-item .nav-home {
-  padding: 12px 20px;
-  border-radius: 8px;
-  border: 1px solid var(--Grey-15, #262626);
-  background-color: var(--Grey-08, #141414);
-  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-home:hover,
-.nav-home:focus {
-  transform: scale(1.1);
 }
 
 .nav-link {
@@ -114,6 +100,19 @@ img {
 .nav-link:focus {
   border-radius: 8px;
   background-color: #141414;
+}
+
+.nav-item .nav-home {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--Grey-15, #262626);
+  background-color: var(--Grey-08, #141414);
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item .nav-home:hover,
+.nav-item .nav-home:focus {
+  transform: scale(1.1);
 }
 
 .header-contact-us {
