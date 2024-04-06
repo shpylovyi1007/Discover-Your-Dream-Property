@@ -33,8 +33,8 @@
             <li class="nav-item">
               <a class="nav-link" href="./index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a href="" class="nav-link nav-home">About Us</a>
+            <li class="nav-item nav-home">
+              <a href="" class="nav-link item-home">About Us</a>
             </li>
             <li class="nav-item">
               <a href="" class="nav-link">Properties</a>
@@ -44,7 +44,7 @@
             </li>
           </ul>
         </nav>
-        <a class="header-contact-us" href="">Contact Us</a>
+        <a class="nav-contact" href="">Contact Us</a>
         <button type="button" class="header-burger">
           <svg class="header-icon-burger" width="28" height="28">
             <use href="./img/icon.svg#icon-burger"></use>
@@ -63,7 +63,7 @@
               srcset="./img/About-Us/about-us.hero.png 2x"
             />
           </div>
-          <div class="left-part">
+          <div class="about-left-part">
             <ul class="container-frame">
               <li class="container-frame-item">
                 <svg class="main-icon first">
@@ -81,8 +81,8 @@
                 </svg>
               </li>
             </ul>
-            <h1 class="hero-title">Our Journey</h1>
-            <p class="hero-text">
+            <h1 class="about-hero-title">Our Journey</h1>
+            <p class="about-hero-text">
               Our story is one of continuous growth and evolution. We started as
               a small team with big dreams, determined to create a real estate
               platform that transcended the ordinary. Over the years, we've
@@ -126,14 +126,16 @@
               </svg>
             </li>
           </ul>
-          <h2 class="values-title">Our Values</h2>
-          <p class="values-text">
-            Our story is one of continuous growth and evolution. We started as a
-            small team with big dreams, determined to create a real estate
-            platform that transcended the ordinary.
-          </p>
+          <div class="values-container">
+            <h2 class="values-title">Our Values</h2>
+            <p class="values-text">
+              Our story is one of continuous growth and evolution. We started as
+              a small team with big dreams, determined to create a real estate
+              platform that transcended the ordinary.
+            </p>
+          </div>
           <ul class="values-list">
-            <li class="values-item line">
+            <li class="values-item values-line-one">
               <div class="item-container">
                 <svg class="values-icon">
                   <use href="./img/icon.svg#icon-values1"></use>
@@ -145,7 +147,7 @@
                 transaction.
               </p>
             </li>
-            <li class="values-item line">
+            <li class="values-item values-line-two">
               <div class="item-container">
                 <svg class="values-icon">
                   <use href="./img/icon.svg#icon-values2"></use>
@@ -157,7 +159,7 @@
                 to the services we provide.
               </p>
             </li>
-            <li class="values-item line">
+            <li class="values-item values-line-three">
               <div class="item-container">
                 <svg class="values-icon">
                   <use href="./img/icon.svg#icon-values3"></use>
@@ -333,7 +335,427 @@
           </ul>
         </div>
       </section>
+      <section class="team">
+        <div class="container">
+          <ul class="container-frame">
+            <li class="container-frame-item">
+              <svg class="main-icon first">
+                <use href="./img/icon.svg#icon-frame"></use>
+              </svg>
+            </li>
+            <li class="container-frame-item">
+              <svg class="main-icon second">
+                <use href="./img/icon.svg#icon-frame"></use>
+              </svg>
+            </li>
+            <li class="container-frame-item">
+              <svg class="main-icon third">
+                <use href="./img/icon.svg#icon-frame"></use>
+              </svg>
+            </li>
+          </ul>
+          <h2 class="team-title">Meet the Estatein Team</h2>
+          <p class="team-text">
+            At Estatein, our success is driven by the dedication and expertise
+            of our team. Get to know the people behind our mission to make your
+            real estate dreams a reality.
+          </p>
+          <ul class="team-list">
+            <li class="team-item">
+              <button class="team-button" type="button">
+                <svg class="item-button-twitter">
+                  <use href="./img/icon.svg#icon-twitter"></use>
+                </svg>
+              </button>
+              <img
+                class="item-img"
+                src="./img/About-Us/max.png"
+                alt="Max Mitchell"
+              />
+              <h3 class="team-item-firsttext">Max Mitchell</h3>
+              <p class="team-item-secondtext">Founder</p>
+              <div class="team-item-container">
+                <p class="team-item-container-text">Say Hello 👋</p>
+                <button class="team-container-button" type="button">
+                  <svg class="team-button-send">
+                    <use href="./img/icon.svg#icon-send-email"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="team-item">
+              <button class="team-button" type="button">
+                <svg class="item-button-twitter">
+                  <use href="./img/icon.svg#icon-twitter"></use>
+                </svg>
+              </button>
+              <img
+                class="item-img"
+                src="./img/About-Us/sarah.png"
+                alt="Sarah Johnson"
+              />
+              <h3 class="team-item-firsttext">Sarah Johnson</h3>
+              <p class="team-item-secondtext">Chief Real Estate Officer</p>
+              <div class="team-item-container">
+                <p class="team-item-container-text">Say Hello 👋</p>
+                <button class="team-container-button" type="button">
+                  <svg class="team-button-send">
+                    <use href="./img/icon.svg#icon-send-email"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="team-item">
+              <button class="team-button" type="button">
+                <svg class="item-button-twitter">
+                  <use href="./img/icon.svg#icon-twitter"></use>
+                </svg>
+              </button>
+              <img
+                class="item-img"
+                src="./img/About-Us/david.png"
+                alt="David Brown"
+              />
+              <h3 class="team-item-firsttext">David Brown</h3>
+              <p class="team-item-secondtext">Head of Property Management</p>
+              <div class="team-item-container">
+                <p class="team-item-container-text">Say Hello 👋</p>
+                <button class="team-container-button" type="button">
+                  <svg class="team-button-send">
+                    <use href="./img/icon.svg#icon-send-email"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="team-item">
+              <button class="team-button" type="button">
+                <svg class="item-button-twitter">
+                  <use href="./img/icon.svg#icon-twitter"></use>
+                </svg>
+              </button>
+              <img
+                class="item-img"
+                src="./img/About-Us/michael.png"
+                alt="Michael Turner"
+              />
+              <h3 class="team-item-firsttext">Michael Turner</h3>
+              <p class="team-item-secondtext">Legal Counsel</p>
+              <div class="team-item-container">
+                <p class="team-item-container-text">Say Hello 👋</p>
+                <button class="team-container-button" type="button">
+                  <svg class="team-button-send">
+                    <use href="./img/icon.svg#icon-send-email"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="valued">
+        <div class="container">
+          <ul class="container-frame">
+            <li class="container-frame-item">
+              <svg class="main-icon first">
+                <use href="./img/icon.svg#icon-frame"></use>
+              </svg>
+            </li>
+            <li class="container-frame-item">
+              <svg class="main-icon second">
+                <use href="./img/icon.svg#icon-frame"></use>
+              </svg>
+            </li>
+            <li class="container-frame-item">
+              <svg class="main-icon third">
+                <use href="./img/icon.svg#icon-frame"></use>
+              </svg>
+            </li>
+          </ul>
+          <h2 class="valued-title">Our Valued Clients</h2>
+          <p class="valued-text">
+            At Estatein, we have had the privilege of working with a diverse
+            range of clients across various industries. Here are some of the
+            clients we've had the pleasure of serving
+          </p>
+          <ul class="valued-list">
+            <li class="valued-item">
+              <p class="valued-item-text">Since 2019</p>
+              <h3 class="valued-item-title">ABC Corporation</h3>
+              <button class="valued-button" type="button">Visit Website</button>
+              <div class="valued-container">
+                <div class="valued-subcontainer">
+                  <div class="valued-icon-container">
+                    <svg class="valued-icon">
+                      <use href="./img/icon.svg#icon-valued1"></use>
+                    </svg>
+                    <p class="valued-subcontainer-text">Domain</p>
+                  </div>
+                  <h4 class="valued-subcontainer-title">
+                    Commercial Real Estate
+                  </h4>
+                </div>
+                <div>
+                  <div class="valued-icon-container">
+                    <svg class="valued-icon">
+                      <use href="./img/icon.svg#icon-valued2"></use>
+                    </svg>
+                    <p class="valued-subcontainer-text">Category</p>
+                  </div>
+                  <h4 class="valued-subcontainer-title">
+                    Luxury Home Development
+                  </h4>
+                </div>
+              </div>
+              <div class="valued-down-container">
+                <p class="valued-down-main-text">What They Said 🤗</p>
+                <p class="valued-down-text">
+                  Estatein's expertise in finding the perfect office space for
+                  our expanding operations was invaluable. They truly understand
+                  our business needs.
+                </p>
+              </div>
+            </li>
+            <li class="valued-item valued-laptop">
+              <p class="valued-item-text">Since 2018</p>
+              <h3 class="valued-item-title">GreenTech Enterprises</h3>
+              <button class="valued-button" type="button">Visit Website</button>
+              <div class="valued-container">
+                <div class="valued-subcontainer">
+                  <div class="valued-icon-container">
+                    <svg class="valued-icon">
+                      <use href="./img/icon.svg#icon-valued1"></use>
+                    </svg>
+                    <p class="valued-subcontainer-text">Domain</p>
+                  </div>
+                  <h4 class="valued-subcontainer-title">
+                    Commercial Real Estate
+                  </h4>
+                </div>
+                <div>
+                  <div class="valued-icon-container">
+                    <svg class="valued-icon">
+                      <use href="./img/icon.svg#icon-valued2"></use>
+                    </svg>
+                    <p class="valued-subcontainer-text">Category</p>
+                  </div>
+                  <h4 class="valued-subcontainer-title">Retail Space</h4>
+                </div>
+              </div>
+              <div class="valued-down-container">
+                <p class="valued-down-main-text">What They Said 🤗</p>
+                <p class="valued-down-text">
+                  Estatein's ability to identify prime retail locations helped
+                  us expand our brand presence. They are a trusted partner in
+                  our growth.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="properties-container-buttons">
+            <div class="properties-container-slide">
+              <button class="properties-button-arrow">
+                <svg class="properties-button-icon" width="24" height="24">
+                  <use href="./img/icon.svg#icon-slide-arrow2"></use>
+                </svg>
+              </button>
+              <p class="properties-slide-text">
+                01<span class="properties-slide-span"> of 10</span>
+              </p>
+              <button class="properties-button-arrow">
+                <svg
+                  class="properties-button-icon-right"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./img/icon.svg#icon-slide-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="journey">
+        <div class="container">
+          <svg class="journey-icon">
+            <use href="./img/icon.svg#icon-abstract-design1"></use>
+          </svg>
+          <svg class="journey-icon-right">
+            <use href="./img/icon.svg#icon-abstract-design2"></use>
+          </svg>
+          <div>
+            <h2 class="journey-title">Start Your Real Estate Journey Today</h2>
+            <p class="journey-text">
+              Your dream property is just a click away. Whether you're looking
+              for a new home, a strategic investment, or expert real estate
+              advice, Estatein is here to assist you every step of the way. Take
+              the first step towards your real estate goals and explore our
+              available properties or get in touch with our team for
+              personalized assistance.
+            </p>
+          </div>
+          <button class="journey-button">Explore Properties</button>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-first-container">
+          <div>
+            <a href="./index.html" class="footer-container-logo">
+              <img class="footer-logo" src="./img/Symbol.png" alt="" />
+              Estatein
+            </a>
+            <form>
+              <div class="footer-input-container">
+                <svg class="footer-input-email" width="20" height="20">
+                  <use href="./img/icon.svg#icon-create-email"></use>
+                </svg>
+                <svg class="footer-input-send" width="24" height="24">
+                  <use href="./img/icon.svg#icon-send-email"></use>
+                </svg>
+                <label class="footer-label" for="user-email"></label>
+                <input
+                  class="footer-input"
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Enter Your Email"
+                />
+              </div>
+            </form>
+          </div>
+          <div>
+            <ul class="footer-list">
+              <li class="footer-item home">
+                <h3 class="footer-item-title">Home</h3>
+                <ul>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Hero Section</a>
+                  </li>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Features</a>
+                  </li>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Properties</a>
+                  </li>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Testimonials</a>
+                  </li>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">FAQ's</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-item">
+                <h3 class="footer-item-title">About Us</h3>
+                <ul>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Our Story</a>
+                  </li>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Our Works</a>
+                  </li>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">How It Works</a>
+                  </li>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Our Team</a>
+                  </li>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Our Clients</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-item properties-footer-item">
+                <h3 class="footer-item-title">Properties</h3>
+                <ul>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Portfolio</a>
+                  </li>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Categories</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-item services">
+                <h3 class="footer-item-title">Services</h3>
+                <ul>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Valuation Mastery</a>
+                  </li>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Strategic Marketing</a>
+                  </li>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Negotiation Wizardry</a>
+                  </li>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Closing Success</a>
+                  </li>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Property Management</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-item contact-us">
+                <h3 class="footer-item-title">Contact Us</h3>
+                <ul>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Contact Form</a>
+                  </li>
+                  <li class="footer-sub-item">
+                    <a class="footer-item-link" href="">Our Offices</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container-social">
+        <div class="container">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <button class="footer-social-button" type="button">
+                <svg class="footer-social" width="20" height="20">
+                  <use href="./img/icon.svg#icon-facebook"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="footer-social-item">
+              <button class="footer-social-button" type="button">
+                <svg class="footer-social" width="20" height="20">
+                  <use href="./img/icon.svg#icon-linkedin"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="footer-social-item">
+              <button class="footer-social-button" type="button">
+                <svg class="footer-social" width="20" height="20">
+                  <use href="./img/icon.svg#icon-twitter"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="footer-social-item">
+              <button class="footer-social-button" type="button">
+                <svg class="footer-social" width="20" height="20">
+                  <use href="./img/icon.svg#icon-youtube"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <ul class="footer-container-links">
+            <li>
+              <a class="footer-first-link" href="">
+                &#64;2023 Estatein. All Rights Reserved.
+              </a>
+            </li>
+            <li>
+              <a class="footer-second-link" href="">Terms &#38; Conditions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
