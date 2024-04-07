@@ -45,7 +45,7 @@
           </ul>
         </nav>
         <a class="nav-contact" href="">Contact Us</a>
-        <button type="button" class="header-burger">
+        <button type="button" class="header-burger" id="openModal">
           <svg class="header-icon-burger" width="28" height="28">
             <use href="./img/icon.svg#icon-burger"></use>
           </svg>
@@ -55,6 +55,11 @@
     <main>
       <section class="about-hero">
         <div class="container">
+          <button class="button-scroll" type="button" id="scroll">
+            <svg class="hero-scroll">
+              <use href="./img/icon.svg#icon-circle-up"></use>
+            </svg>
+          </button>
           <div class="about-hero-container">
             <img
               class="hero-img"
@@ -107,6 +112,7 @@
           </div>
         </div>
       </section>
+
       <section class="our-values">
         <div class="container">
           <ul class="container-frame">
@@ -186,6 +192,7 @@
           </ul>
         </div>
       </section>
+
       <section class="achievements">
         <div class="container">
           <ul class="container-frame">
@@ -236,6 +243,7 @@
           </ul>
         </div>
       </section>
+
       <section class="experience">
         <div class="container">
           <ul class="container-frame">
@@ -335,6 +343,7 @@
           </ul>
         </div>
       </section>
+
       <section class="team">
         <div class="container">
           <ul class="container-frame">
@@ -452,6 +461,7 @@
           </ul>
         </div>
       </section>
+
       <section class="valued">
         <div class="container">
           <ul class="container-frame">
@@ -574,6 +584,7 @@
           </div>
         </div>
       </section>
+
       <section class="journey">
         <div class="container">
           <svg class="journey-icon">
@@ -757,5 +768,38 @@
         </div>
       </div>
     </footer>
+    <div class="modal" id="modal">
+      <div class="container">
+        <button class="button-close" type="button" id="close">
+          <svg class="modal-close">
+            <use href="./img/icon.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <nav class="modal-navigation">
+          <ul class="modal-nav-list">
+            <li class="modal-nav-item modal-nav-home">
+              <a class="modal-nav-link modal-item-home" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="modal-nav-item">
+              <a href="./about-us.html" class="modal-nav-link modal-item-home"
+                >About Us</a
+              >
+            </li>
+            <li class="modal-nav-item">
+              <a href="" class="modal-nav-link">Properties</a>
+            </li>
+            <li class="modal-nav-item">
+              <a href="" class="modal-nav-link">Services</a>
+            </li>
+            <li class="modal-nav-item">
+              <a class="modal-nav-contact" href="">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

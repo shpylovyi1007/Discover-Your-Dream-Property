@@ -194,6 +194,24 @@ img {
   }
 }
 
+.button-scroll {
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 12px;
+  background-color: #141414;
+  border: 2px solid var(--Grey-15, #fff);
+  padding: 10px;
+}
+
+.hero-scroll {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
+
 .hero-title {
   font-size: 28px;
   font-weight: 600;
@@ -327,6 +345,23 @@ img {
 @media (min-width: 1280px) {
   .hero {
     padding: 0;
+  }
+
+  .button-scroll {
+    position: fixed;
+    display: flex;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 12px;
+    background-color: #141414;
+    border: 2px solid var(--Grey-15, #fff);
+    padding: 10px;
+  }
+
+  .hero-scroll {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
   }
 
   .up-part {
@@ -1316,4 +1351,68 @@ img {
     display: flex;
     gap: 20px;
   }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #141414;
+  padding: 40px 0;
+}
+
+.modal .container {
+  position: relative;
+  height: 100%;
+}
+
+.button-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  border: none;
+  background-color: var(--Grey-10, #1a1a1a);
+}
+
+.modal-close {
+  width: 28px;
+  height: 28px;
+  fill: #fff;
+}
+
+.modal-navigation {
+  padding-top: 120px;
+}
+
+.modal-nav-item:not(:first-child) {
+  margin-top: 60px;
+}
+
+.modal-nav-link {
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 12px;
+  background-color: #1a1a1a;
+}
+
+.modal-item-home {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--Grey-15, #262626);
+  background-color: var(--Grey-08, #141414);
+}
+
+.modal-nav-contact {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid var(--Grey-15, #262626);
+  background-color: var(--Grey-08, #141414);
 }
